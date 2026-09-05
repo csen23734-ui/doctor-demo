@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Dr. Arjun Sharma</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Dr. <span>Arjun Sharma</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="treatments.html">Treatments</a>
+                <a href="clinic.html">Clinic</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="nav-button">
+                Book Appointment
+            </a>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+        <div class="container">
+
+            <span>CONTACT & APPOINTMENT</span>
+
+            <h1>
+                We're Here to <strong>Help You</strong>
+            </h1>
+
+            <p>
+                Get in touch to schedule a consultation or learn
+                more about the services represented in this demo.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Schedule Your
+                    <span>Consultation</span>
+                </h2>
+
+                <p>
+                    This is a fictional demo contact section.
+                    The final website can include the doctor's
+                    verified contact information.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Jhalawar, Rajasthan, India</span>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+
+                        <div>
+                            <strong>Working Hours</strong>
+                            <span>Monday – Saturday, 10 AM – 6 PM</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="appointment-form">
+
+                <h3>Request an Appointment</h3>
+
+                <p>
+                    Fill in your details and our team will
+                    contact you shortly.
+                </p>
+
+
+                <form
+                    id="appointmentForm"
+                    action="save_appointment.php"
+                    method="POST"
+                >
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="patient_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="appointment_date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TIME -->
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="time"
+                            name="appointment_time"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message (Optional)
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us briefly how we can help"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="form-button"
+                    >
+                        Request Appointment →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= QUICK CTA ================= -->
+
+    <section class="appointment-cta">
+
+        <div class="container cta-container">
+
+            <div>
+
+                <span>
+                    QUICK APPOINTMENT
+                </span>
+
+                <h2>
+                    Prefer to Contact Us Directly?
+                </h2>
+
+            </div>
+
+            <a
+                href="https://wa.me/919876543210"
+                class="cta-button"
+            >
+                Chat on WhatsApp →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Dr. <span>Arjun Sharma</span>
+                </a>
+
+                <p>
+                    Consultant Neurosurgeon<br>
+                    Brain & Spine Care
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="treatments.html">
+                    Treatments
+                </a>
+
+                <a href="clinic.html">
+                    Clinic
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Dr. Arjun Sharma — Demo Website
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
